@@ -1,0 +1,41 @@
+.bottomhero{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 6rem;
+    gap: 3rem;
+    background-color: white;
+}
+
+.bottomhero .bottomhero-left{
+   padding-right: 5%;
+}
+
+.bottomhero .bottomhero-left .bottomhero-title{
+    font-size: 4rem;
+    font-weight: 700 !important;
+}
+
+.bottomhero-left .bottomhero-des{
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    line-height: 3.5rem;
+    color: grey;
+}
+
+@media(width<=1024px){
+    .hero{
+        grid-template-columns: 40% 60%;
+        gap: 2rem;
+    }
+}
+
+@media(width<=421px){
+    .bottomhero{
+        grid-template-columns: 100%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .bottomhero-right img{
+      margin: 0 auto;
+    }
+}

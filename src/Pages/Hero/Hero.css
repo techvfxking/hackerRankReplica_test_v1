@@ -1,0 +1,50 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    padding: 6rem;
+    gap: 3rem;
+    background-color: white;
+    text-align: center;
+}
+
+.hero .hero-left{
+   padding-right: 5%;
+}
+
+.hero .hero-left .hero-title{
+    font-size: 10rem;
+    font-weight: 700 !important;
+}
+
+.hero-left .hero-des{
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    line-height: 3.5rem;
+}
+.btn-hero{
+     border: 1px solid #18181a;
+}
+.extra {
+     font-size: 2.5rem;
+    margin-top: 2.5rem;
+    line-height: 3.5rem;
+}
+
+@media(width<=1024px){
+    .hero{
+        grid-template-columns: 40% 60%;
+        gap: 2rem;
+    }
+}
+
+@media(width<=421px){
+    .hero{
+        grid-template-columns: 100%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .hero-right img{
+      margin: 0 auto;
+    }
+}
